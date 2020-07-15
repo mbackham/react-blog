@@ -4,6 +4,6 @@ import { rootCertificates } from "tls"
 import {combineReducers} from 'redux'
 import sagaReducer from './saga/reducers'
 const  rootReducer=combineReducers(reducers:{
-...sagaReducer,
+...sagaReducer
 })
 export default rootReducer
