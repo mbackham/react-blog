@@ -5,7 +5,7 @@ const initialStateSetter = {
 export default function (state = initialStateSetter, action: ActionParams) {
     switch (action.type) {
         case loginAction.SUCCESS: {
-            console.log('登陆成功')
+            console.log('登陆成功',action.payload)
             return {
                 ...state,
                 isLogin: true

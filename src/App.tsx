@@ -7,9 +7,7 @@ import useActions from './hooks/useActions'
 function App() {
   const dispatch = useDispatch()
   const handleTestReduxClick = () => {
-    actions.loginAction({
-      user
-    })
+    actions.loginAction()
   }
   const { retryTip } = useSelector((state: IState) => state.common)
   console.log('retryTip', retryTip)
