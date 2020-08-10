@@ -1,5 +1,5 @@
 import {createRoutine,promisifyRoutine} from 'redux-saga-routines'
-import NAME_SPACE from '../../../constants/index'
+import NAME_SPACE from '../../../constants/name-spce/index'
 import extendRoutine from '../extendRoutine'
 export const loginAction=extendRoutine(
     createRoutine(`${NAME_SPACE.USER}`),
@@ -10,4 +10,4 @@ export const loginAction=extendRoutine(
         }
     ]
 )
-const loginActionPromise=promisifyRoutine(loginAction)
+export const loginActionPromise = promisifyRoutine( loginAction );
