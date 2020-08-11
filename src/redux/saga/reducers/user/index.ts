@@ -13,6 +13,9 @@ export default function (state = initialStateSetter, action: ActionParams) {
         }
         case loginAction.FAILURE:{
             console.log('登陆出错')
+            return{
+                ...state
+            }
         }
         default:
             return state;
