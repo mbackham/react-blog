@@ -55,6 +55,7 @@
     "env-cmd": "^10.1.0",
     "less": "^3.11.3",
     "less-loader": "^5.0.0",
+    "particles-bg": "^2.5.0",
     "react-app-rewired": "^2.1.6"
   }
 }
